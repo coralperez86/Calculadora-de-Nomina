@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de Nómina</string>
+    <string name="app_subtitle">Estimación del pago mensual de un trabajador en Colombia (modelo simplificado)</string>
+
+    <!-- Campos de entrada -->
+    <string name="salario_basico_label">Salario básico mensual</string>
+    <string name="horas_diurnas_label">Horas extra diurnas</string>
+    <string name="horas_nocturnas_label">Horas extra nocturnas</string>
+
+    <!-- Interruptores -->
+    <string name="es_dominical_label">Horas extra en domingo o festivo</string>
+    <string name="transporte_empresa_label">La empresa suministra el transporte</string>
+
+    <!-- Botones -->
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_limpiar">Limpiar</string>
+
+    <!-- Mensajes de error (Caso E) -->
+    <string name="error_salario_invalido">Ingrese un salario válido</string>
+    <string name="error_salario_minimo">El salario no puede ser inferior al mínimo ($ 1.750.905)</string>
+    <string name="error_horas_invalidas">Las horas extra deben ser un número mayor o igual a cero</string>
+    <string name="error_horas_exceso">El total de horas extra no puede superar 48 en el mes</string>
+
+    <!-- Desglose: devengados -->
+    <string name="sec_devengado">Devengados</string>
+    <string name="lbl_valor_hora">Valor hora ordinaria</string>
+    <string name="lbl_salario_basico">Salario básico</string>
+    <string name="lbl_horas_extra">Horas extra</string>
+    <string name="lbl_aux_transporte">Auxilio de transporte</string>
+    <string name="lbl_total_devengado">Total devengado</string>
+
+    <!-- Desglose: deducciones -->
+    <string name="sec_deducciones">Deducciones</string>
+    <string name="lbl_salud">Salud (4 %)</string>
+    <string name="lbl_pension">Pensión (4 %)</string>
+    <string name="lbl_fsp">Fondo de Solidaridad Pensional (1 %)</string>
+    <string name="lbl_total_deducciones">Total deducciones</string>
+
+    <!-- Resultado -->
+    <string name="lbl_salario_neto">Salario neto a recibir</string>
+    <string name="lbl_equivale_smmlv">Equivale a %1$s salarios mínimos (SMMLV)</string>
+
+    <!-- Rangos salariales (imágenes y descripciones) -->
+    <string name="rango_1_desc">Rango 1: con derecho a auxilio de transporte (≤ 2 SMMLV)</string>
+    <string name="rango_2_desc">Rango 2: sin auxilio de transporte ni Fondo de Solidaridad (&gt; 2 y &lt; 4 SMMLV)</string>
+    <string name="rango_3_desc">Rango 3: aporta al Fondo de Solidaridad Pensional (≥ 4 SMMLV)</string>
+
+    <string name="cd_rango_1">Rango salarial 1: trabajador con derecho a auxilio de transporte</string>
+    <string name="cd_rango_2">Rango salarial 2: trabajador sin auxilio de transporte ni Fondo de Solidaridad Pensional</string>
+    <string name="cd_rango_3">Rango salarial 3: trabajador que aporta al Fondo de Solidaridad Pensional</string>
+
+    <!-- Pie de página -->
+    <string name="autor">Coral D. Pérez Manrique</string>
+    <string name="autor_credito">Autor: %1$s</string>
+    <string name="nota_academica">Aplicación con fines exclusivamente académicos. El modelo de cálculo es simplificado y no reemplaza la liquidación de nómina de un empleador.</string>
+</resources>
