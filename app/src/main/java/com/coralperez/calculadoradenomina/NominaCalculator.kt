@@ -6,28 +6,28 @@ import androidx.compose.runtime.saveable.Saver
 import java.text.NumberFormat
 import java.util.Locale
 
-// Salario mínimo mensual legal vigente 2026 — Decreto 1469 de 2025
+// Salario mínimo mensual legal vigente 2026 
 const val SMMLV_2026 = 1_750_905.0
 
 // Auxilio de transporte 2026 — Decreto 1470 de 2025
 const val AUX_TRANSPORTE_2026 = 249_095.0
 
-// Horas ordinarias mensuales: 42 h semanales — Ley 2101 de 2021 (vigente desde el 15 de julio de 2026)
+// Horas ordinarias mensuales: 42 h semanales 
 const val HORAS_MES = 210.0
 
-// Aporte a salud del trabajador — Ley 100 de 1993
+// Aporte a salud del trabajador 
 const val PORC_SALUD = 0.04
 
-// Aporte a pensión del trabajador — Ley 100 de 1993
+// Aporte a pensión del trabajador 
 const val PORC_PENSION = 0.04
 
-// Fondo de Solidaridad Pensional — Ley 797 de 2003
+// Fondo de Solidaridad Pensional 
 const val PORC_FSP = 0.01
 
-// Límite máximo de horas extra en el mes (12 semanales × 4 semanas) — Ley 2101 de 2021
+// Límite máximo de horas extra en el mes (12 semanales × 4 semanas) 
 const val MAX_HORAS_EXTRA_MES = 48.0
 
-// Factores de recargo de las horas extra. En día hábil se aplica el recargo legal;
+// Factores de recargo de las horas extra, en día hábil se aplica el recargo legal,
 // en domingo o festivo se suma el recargo dominical del 90 %.
 const val FACTOR_EXTRA_DIURNA_HABIL = 1.25   // 25 % de recargo
 const val FACTOR_EXTRA_DIURNA_DOMINICAL = 2.15 // 25 % + 90 % dominical
@@ -175,7 +175,7 @@ val ResultadoNominaSaver: Saver<ResultadoNomina?, List<Double>> = Saver(
 )
 
 /**
- * F8 — Formato de moneda colombiano, sin decimales y con separador de miles.
+ * F8 — Formato de moneda colombiano
  */
 fun Double.toCopCurrency(): String =
     NumberFormat.getCurrencyInstance(Locale("es", "CO")).apply {
