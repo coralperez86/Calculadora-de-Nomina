@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- "Autor" es la ortografía correcta en español; el corrector solo conoce inglés. -->
+    <issue id="Typos">
+        <ignore regexp="\bAutor\b" />
+    </issue>
+</lint>
